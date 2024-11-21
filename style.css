@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Ga+Maamli&family=Geist+Mono:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Geist Mono", serif;
+    font-style: normal;
+    font-size: 16px;
+}
+
+header{
+    display: flex;
+    height: 100px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo-content{
+    font-family: "Ga Maamli", serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+ul{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+}
+
+ul li a{
+    padding: 0 20px;
+    text-decoration: none;
+    color: #3a3a3a;
+    display: inline-block;
+}
+
+li a::after{
+    content: '';
+    display: block;
+    height: 4px;
+    width: 0;
+    background:#c4c4f7 ;
+    transition: all 0.5s;
+}
+li a:hover::after{
+    width: 100%;
+}
+
+main{
+    display: flex;
+    height: calc(100vh-100px);
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-img{
+    max-width: 670px;
+    height: auto;
+}
+
+.left-cnt{
+    width: 30%;
+}
+
+.left-cnt h1{
+    font-size: 3em;
+    color: #133b47;
+    text-transform: uppercase;
+}
+
+.left-cnt h2{
+    font-size: 1.7em;
+    color: #fca70c;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+}
+.left-cnt p{
+    font-size: 0.9em;
+    font-weight: 400px;
+    margin: 30px 0;
+    line-height: 31px;
+    color: #333;
+}
+.learn-btn{
+    padding: 15px 30px;
+    background-color: #c4c4f7;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.learn-btn:hover {opacity: 0.6}
+
+.signup-btn{
+    padding: 6px 12px;
+    background-color: #c4c4f7;
+    outline: none;
+    border: none;
+    font-weight: 700;
+}
+.signup-btn:hover {opacity: 0.6}
